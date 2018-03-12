@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SCRAPBOOK</title>
+
+	<link rel="icon" type="shortcut icon" href="favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	
+
+	<script type="text/javascript" src="scripts/main.js"></script>
+</head>
+<body data-spy="scroll" data-target="#navigationBar" data-offset="70">
+	<nav class="navbar navbar-expand-md fixed-top navbar-light bg-light " id="navigationBar">
+		<a href="#home" class="navbar-brand">SCRAPBOOK</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"><span class="navbar-toggler-icon"></span></button>
+
+		<div id="navbarContent" class="collapse navbar-collapse justify-content-end">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a  class="nav-link" href="#home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a  class="nav-link" href="#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a  class="nav-link" href="#footer">Download App</a>
+				</li>				
+			</ul>
+
+			<form class="form-inline">
+					<input type="email" id="email" class="form-control mr-sm-2" placeholder="Email">					
+					<input type="password" id="password" class="form-control mr-sm-2" placeholder="Password">					
+					<button class="btn btn-success" type="submit" class="form-control mr-sm-2">Login</button>		
+			</form>
+		</div>		
+	</nav>
+
+	<div class="jumbotron jumbotron-fluid" id="home">
+		<div id="jumbotron-content">
+			<h1 class="display-4">SCRAPBOOK</h1>
+
+			<div id="description">
+			  <p class="font-weight-bold lead">Record all of your memories in one place. Access them anywhere you are and enjoy the memories.
+			  Share your memories with the world</p>
+			 </div>
+
+			 <p class="font-weight-bold lead">Want to know more? Join our mailing list</p>
+
+			 <form class="form-inline justify-content-center mt-4">			 
+			 	<div class="form-group">
+			 		<div class="input-group">
+			 			<div class="input-group-prepend">
+			 				<div class="input-group-text">@</div>
+			 			</div>			 			
+			 			<input type="email" id="email" class="form-control" placeholder="Email address">
+			 		</div>
+			 	</div>
+
+			 	<button type="submit" class="btn btn-primary ml-1">Sign Up</button>			 	
+			 </form>			  
+		</div>
+	</div>
+
+
+	<div class="container" id="about">
+		
+		<div class="row flex-column" id="summary">
+			<h1>Add Share Relive!</h1> 
+			<p class="lead">Take photos, videos and edit them here. Upload for the world to see</p>
+		</div>
+
+		<div class="row">
+			<div class="card-deck">
+			  <div class="card">
+			    <img class="card-img-top" src="images/card1.jpg" alt="Card image cap">
+			    <div class="card-body">
+			      <h5 class="card-title"><i class="fas fa-anchor"></i>First baby steps</h5>
+			      <p class="card-text">Capture the firsts moments for your baby.
+			      Baby steps count as long as you move forward</p>			      
+			    </div>
+			  </div>
+			  <div class="card">
+			    <img class="card-img-top" src="images/card2.jpg" alt="Card image cap">
+			    <div class="card-body">
+			      <h5 class="card-title"><i class="fas fa-anchor"></i>Beach walks</h5>
+			      <p class="card-text">Every father should remember that one day his son will his example and not his advice</p>
+			      
+			    </div>
+			  </div>
+			  <div class="card">
+			    <img class="card-img-top" src="images/card3.jpg" alt="Card image cap">
+			    <div class="card-body">
+			      <h5 class="card-title"><i class="fas fa-anchor"></i>Friends</h5>
+			      <p class="card-text">The strong bond of friendship is not always a balanced equation; friendship is not always about giving and taking in equal shares. Instead, friendship is grounded in a feeling that you know exactly who will be there for you when you need something, no matter what or when.</p>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid" id="footer">
+		
+			<h2>Download the app now</h2>
+
+			<div id="download-images">
+				<a href=""><img src="images/google-play-badge.png" id="appStoreIcon"></a>
+				<a href=""><img src="images/ios-app-store.svg" class="appStoreIcon"></a>
+			</div>
+
+			<span id="copyright">Copyright 2018</span>			
+		
+	</div>
+</body>
+</html>
